@@ -1,0 +1,33 @@
+body {
+    margin: 10px;
+}
+
+article .second {
+    font-weight: 140%;
+    font-style: italic;
+}
+
+article :first-child {
+    font-size: 240%;
+    font-style: bold;
+}
+
+section :first-of-type {
+    color: blueviolet;
+}
+
+ul li:nth-child(odd) {
+    color: red;
+}
+
+ul li:nth-child(3n) {
+    color: teal;
+}
+
+a:visited {
+    color: burlywood;
+}
+
+a:hover, a:focus {
+    color: wheat;
+}

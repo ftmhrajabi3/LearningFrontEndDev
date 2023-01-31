@@ -1,0 +1,28 @@
+body {
+    margin: 10px;
+}
+
+.first-letter {
+    font-size: 140%;
+    font-style: italic;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    color:aliceblue;
+    background-color: tomato;
+}
+
+p::before {
+    content: 'example';
+    color: steelblue;
+}
+
+p::after {
+    content: ' end';
+    color: seashell;
+    background-color: darkred;
+}

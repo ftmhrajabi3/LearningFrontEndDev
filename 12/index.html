@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>selectors in css</h1>
+    <p>body {} is a selector.</p>
+    <p>a[href="https://google.com"] only works on tags with href as defined.</p>
+    <p>a[href*="google"] works on the ones that their href has google in it.</p>
+    <p>
+      a[href^="https://"] works on the ones that start with the mentioned
+      address.
+    </p>
+    <p>a[href$=".com"] works on the ones that end with .com .</p>
+    <p>you can combine all these:a[href^="https://"][href$=".com"]</p>
+
+    <p>
+      #product p: find any element that has product element and find paragraphs
+      whithin that.
+    </p>
+    <p>
+      #product > p: find any element that has product element and find
+      paragraphs whithin that which are the first child in hierarchy.
+    </p>
+    <p>
+      #product + p: any paragraph that is after the product tag will have the
+      css attributes.
+    </p>
+    <p>#product ~ p: all paragraphs after the product.</p>
+  </body>
+</html>
