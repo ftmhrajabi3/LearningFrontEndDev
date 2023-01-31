@@ -1,0 +1,17 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-top: 2px solid black;
+}
+
+.box-relative-size {
+    width: 50%; /* 50% of parent's width which is body in this case.*/
+    height: 100vh; /* vh: viewport's height, vw: viewport's width */
+    background-color: crimson;
+    border-top: 2px solid black;
+}

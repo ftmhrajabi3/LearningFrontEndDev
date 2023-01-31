@@ -1,0 +1,22 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
+
+.box-with-padding {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 10px solid pink;
+}
+
+.box-with-sizing {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    padding: 10px;
+    border: 10px solid burlywood;
+    box-sizing: border-box;
+}

@@ -1,0 +1,64 @@
+body {
+    margin: 10px;
+    height: 200vh;
+}
+
+.boxes {
+    border: 3px solid lightblue;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background-color: black;
+}
+
+.box-two {
+    background-color: blue;
+    position: relative;
+    left: 3rem; /* positive: right, negative: left*/
+    top: 2rem;
+    z-index: -1; /* default value: 0, want it to go away from us:-1, get closer to us: 1*/
+}
+
+.box-three {
+    background-color: green;
+}
+
+
+
+.absolute-box {
+    border: 3px solid lightblue;
+    position: relative;
+}
+
+.box-abs {
+    width: 5rem;
+    height: 5rem;
+}
+
+.one-box {
+    background-color: black;
+}
+
+.two-box {
+    background-color: blue;
+    position: absolute;
+    right: 0; /* positive: right, negative: left*/
+    bottom: 0;
+    z-index: -1; /* default value: 0, want it to go away from us:-1, get closer to us: 1*/
+}
+
+.three-box {
+    background-color: green;
+    position: fixed; /* always on top of the page*/
+    /* changing the size of the box. but without width and height*/
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    
+    top: 0;
+}

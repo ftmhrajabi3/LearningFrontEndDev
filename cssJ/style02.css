@@ -1,0 +1,10 @@
+* , *::after, *::before {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    display: inline-block;
+}
