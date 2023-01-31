@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: tomato 2px solid;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 15px 15px 1px lightgrey;
+  position: relative;
+  top: 35%;
+  left: 35%;
+}
