@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-box {
+  display: grid;
+  grid-template: 100px auto 100px / 30fr 70fr 30fr;
+  border: 2px solid red;
+  height: 100vh;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas:
+    "header header header"
+    "nav    main   aside"
+    "nav    footer footer";
+}
+
+.box {
+  background-color: blue;
+  color: white;
+}
+
+header.box {
+  grid-area: header;
+}
+
+main.box {
+  grid-area: main;
+}
+
+footer.box {
+  grid-area: footer;
+}
+
+nav.box {
+  grid-area: nav;
+}
