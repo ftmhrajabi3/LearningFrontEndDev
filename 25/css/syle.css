@@ -1,0 +1,22 @@
+body {
+  background: url(../../24/img/bg-paper.jpg);
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  /*background-position: 100px 100px;*/
+  /* to define background size define width and length*/
+  /*background-size: 1000px 1000px;
+  background-size: 100% 1000px;*/
+  /*واسه اگه ارتفاع رو توی بالایی 100 درصد تعریف کنی، صفحه یه دفعه خالی میشه
+  چون که ارتفاع یک بلاک تا وقتی خالی باشه برابر صفره.
+  پس نیازه ارتفاع بادی رو مشخص کنی.*/
+  /*background-size: 100% 100%;*/
+  background: url(../../24/img/bg-paper@2x.jpg);
+  background-size: cover;
+  height: 100vh;
+
+  background: url(../../24/img/bg-sanfrancisco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300vh;
+}

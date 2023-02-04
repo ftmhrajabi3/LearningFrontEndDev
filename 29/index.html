@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supporting high density screen</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ac35f0463b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      src="../24/img/meal.jpg"
+      alt="A bowl of food"
+      class="meal"
+      srcset="
+        ../24/img/meal.jpg    1x,
+        ../24/img/meal@2x.jpg 2x,
+        ../24/img/meal@3x.jpg 3x
+      "
+    />
+    <p>مثلا توی اپل برای نمایش هر پیکسل، از دو پیکسل فیزیکی استفاده میشه پس</p>
+    <p>DPR = 2</p>
+    <p>
+      به کمک کد بخش تصویر مشخص می کنیم متناسب با نسبت پیکسل ها کدوم تصویر نمایش
+      داده بشه.
+    </p>
+
+    <h2>Resolution switching problem</h2>
+    <p>
+      گاهی اوقات می خواهیم یک تصویر را برای اندازه های مختلف دستگاه ها نمایش
+      دهیم.
+    </p>
+    <p>
+      توی تمرین قبلی به دی پی آر توجه می کردیم ولی اینجا میخوایم علاوه بر اون به
+      سایز دستگاه هم توجه کنیم.
+    </p>
+    <p>پس یه تصویر با سایزهای مختلف رو نیاز داریم.</p>
+    <img
+      src="../24/img/meal.jpg"
+      alt="A bowl of food"
+      class="meal"
+      srcset="
+        ../24/img/meal.jpg     400w,
+        ../24/img/meal@2x.jpg  800w,
+        ../24/img/meal@3x.jpg 1200w
+      "
+    />
+    <p>این سری پهنای تصاویر رو مشخص کردیم نه دی پی آر رو.</p>
+    <p>
+      فرض کنید که میخواید تصویرتون توی گوشی کل صفحه رو بگیره ولی توی تبلت نصف
+      صفحه و توی لپ تاپ یک سوم صفحه رو بگیره.
+    </p>
+    <p>برای این کار مدیا کاندیشن ها رو استفاده می کنیم.</p>
+    <img
+      src="../24/img/meal.jpg"
+      alt="A bowl of food"
+      srcset="
+        ../24/img/meal.jpg     400w,
+        ../24/img/meal@2x.jpg  800w,
+        ../24/img/meal@3x.jpg 1200w
+      "
+      sizes="(max-width: 500px) 100vw, (max-width: 700px) 50vw, 33vw"
+    />
+    <p>صفحه رو ریسایز کن.</p>
+    <p>
+      by using responsive image beakpoints generator, you can decide the break
+      points and images to use for different sizes.
+    </p>
+    <h2>WebP images</h2>
+    <p>
+      اگر از فایلی استفاده می کنید که ممکنه فرمتش رو بعضی مرورگرها ساپورت نکنند،
+      از این تکنیک استفاده کنید.
+    </p>
+    <picture>
+      <source type="image/WebP" srcset="../24/img/meal.webp" />
+      <source type="image/jpeg" srcset="../24/img/meal.jpg" />
+      <img src="../24/img/meal.jpg" alt="meal picture" />
+    </picture>
+    <h2>Art Direction</h2>
+    <p>
+      گاهی اوقات میخوایم که تصویر روی گوشی مدل کراپ شده و کوچکتر تصویر اصلی
+      باشه.
+    </p>
+    <picture>
+      <source media="(max-width: 500px)" srcset="../24/img/meal-cropped.jpg" />
+      <source media="(min-width: 501px)" srcset="../24/img/meal.jpg" />
+      <img src="../24/img/meal.jpg" alt="meal picture" />
+    </picture>
+    <h2>Scalable Vector Graphics</h2>
+    <p>
+      میتونیم از این تصاویر به عنوان پس زمینه استفاده کنیم. چون خیلی راحت میشه
+      متناسب با سایز بزرگ و کوچیکشون کرد.
+    </p>
+    <p>check out svgbackgrounds.com</p>
+    <h2>Icons</h2>
+    <p>check out fontawesome</p>
+    <p>
+      now by making your account and recieveing a token you can get your own
+      icons.
+    </p>
+    <p>in order to find each icon, look for its tags on their website.</p>
+    <i class="fas fa-user-friends fa-2x icon"></i>
+    <p>we can add our own style to the icon too.</p>
+  </body>
+</html>
