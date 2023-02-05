@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="stylesheet" href="../26/css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <form action="POST">
+      <input type="number" value="4" disabled />
+      <input type="password" />
+      <input type="date" />
+      <input type="email" placeholder="name@gmail.com" autofocus />
+      <textarea name="" id="" cols="30" rows="10" readonly>Hello</textarea>
+      <input type="text" maxlength="14" />
+    </form>
+    <p>if a we have "disabled" then the value won't be sent to the server</p>
+    <p>when page is loaded the "autofocus" input would be ready to get input</p>
+    <form action="POST">
+      <input type="text" list="countries" />
+      <datalist id="countries" autocomplete="off">
+        <option data-value="a">Australia</option>
+        <option data-value="c">Canada</option>
+        <option data-value="i">India</option>
+        <option data-value="u">USA</option>
+      </datalist>
+    </form>
+    <p>
+      this option list has the style implemented by the browser. to be able to
+      choose the style for that, you need to search for datalist on web and read
+      it. it has js so it's out of the scope of this course.
+    </p>
+    <form action="POST">
+      <select name="" id="">
+        <option value="">---</option>
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      <label for="multi">multiple option</label>
+      <select name="multi" multiple>
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      <label for="ge">grouping elements</label>
+      <select name="ge">
+        <optgroup label="Front-end Courses">
+          <option value="1" selected>HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="4">PHP</option>
+          <option value="5">Go</option>
+          <option value="6">Python</option>
+        </optgroup>
+      </select>
+    </form>
+    <p>right input: and see what happens!</p>
+    <form action="POST">
+      <div>
+        <input type="checkbox" name="" id="front-end" disabled />
+        <label class="label-inline" for="front-end">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="back-end" checked />
+        <label class="label-inline" for="back-end">Go</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="silver" />
+        <label for="silver" class="label-inline">silver</label>
+        <input type="radio" name="membership" id="gold" />
+        <label for="gold" class="label-inline">gold</label>
+      </div>
+      <div>
+        <input type="range" name="" id="" min="0" max="100" value="90" />
+      </div>
+      <div>
+        <input type="file" name="" id="" multiple accept=".jpg" />
+        <input type="file" name="" id="" multiple accept="image/*" />
+      </div>
+    </form>
+    <p>the hidden value is used to give id to the course.</p>
+    <p>do not store sensetive data in it.</p>
+    <form action="POST">
+      <input type="hidden" name="course2" value="142" />
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+    </form>
+    <h2>Adding validation to the form:</h2>
+    <p>always add maxlength.</p>
+    <form action="POST">
+      <input type="text" required minlength="3" maxlength="10" />
+      <input type="number" min="0" max="10" />
+      <button type="submit">submit</button>
+    </form>
+    <h2>Submiting the form</h2>
+    <p>
+      In order to make a button, you can use input:submit but you cant change
+      the text of the button.
+    </p>
+    <p>or you can simply use button</p>
+    <form action="POST">
+      <input type="text" name="" id="" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
